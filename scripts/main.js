@@ -10,7 +10,16 @@ myImage.onclick = function() {
 
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
-function setUserName() {
+
+myButton.onclick = function() {
+	let myName = prompt('Please enter your name.');
+	if(myName) {
+		myHeading.textContent = 'Welcome to BIK Industries, ' + myName;
+	} else {
+		myHeading.textContent = 'BIK Industries';
+	}
+}
+/*function setUserName() {
 	let myName = prompt('Please enter your name.');
 	if(!myName) {
 		setUserName();
@@ -29,4 +38,4 @@ if(!localStorage.getItem('name')) {
 
 myButton.onclick = function() {
 	setUserName();
-}
+}*/
