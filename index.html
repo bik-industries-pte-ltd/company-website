@@ -1,11 +1,11 @@
 <!--python -m http.server Use this command to initialise server-->
 
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 	<head>
 		<title>BIK Industries</title>
 		<meta name="description" content="BIK Industries sells and maintains high-speed inkjet printers. We deal with high-profile clients, including manufacturing and engineering companies, for our printing services.">
-		
+		<link rel="icon" href="images/bik-industries.png" type="image/x-icon">
 
 		<!--og meta fields are used for Open Graph Data to provide an image and description when users embed the website link-->
 		<meta property="og:image" content="images/bik-industries.png">
@@ -15,17 +15,37 @@
 		<meta charset="utf-8">
 		<link href="styles/style.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<script src="scripts/main.js" defer></script>
 	</head>
 	<body>
-		<h1>BIK Industries</h1>
-		<img src="images/bik-industries.png" alt="The BIK Industries company logo.">
-		<p class="company-info">BIK Industries sells and maintains high-speed <a href="https://en.wikipedia.org/wiki/Inkjet_printing">inkjet printers</a>. We deal with high-profile clients, including manufacturing and engineering companies, for our printing services.</p>
-		<p class="company-info">You can reach us at:</p>
-		<ul class="company-info">
-			<li>ian@bikindustries.com</li>
-			<li>1002 JALAN BUKIT MERAH, #04-08/09, Singapore 159456</li>
-		</ul>
-		<button>Change user</button>
-		<script src="scripts/main.js"></script>
+		<nav>
+	      	<ul>
+	        	<li><a href="#">Home</a></li>
+	        	<li><a href="#">Our team</a></li>
+	        	<li><a href="#">Projects</a></li>
+	        	<li><a href="#">Contact</a></li>
+	      	</ul>
+
+	       	<form>
+	         	<input type="search" name="q" placeholder="Search query">
+	         	<input type="submit" value="Go!">
+	       	</form>
+     	</nav>
+     	<main>
+			<h1>BIK Industries</h1>
+			<img src="images/bik-industries.png" alt="The BIK Industries company logo.">
+			<p class="company-info">BIK Industries sells and maintains high-speed <a title="Wikipedia - Inkjet Printers" href="https://en.wikipedia.org/wiki/Inkjet_printing">inkjet printers</a>. We deal with high-profile clients, including manufacturing and engineering companies, for our printing services.</p>
+			<a href="products/products.html" title="View our products">Our Products</a>
+		</main>
+		<footer>
+			<h3 class="company-info">Contact Us</h3>
+			<address>
+				<ul class="company-info">
+					<li><a href="mailto:ian@bikindustries.com" title="Compose an email">ian@bikindustries.com</a></li>
+					<li>1002 JALAN BUKIT MERAH, #04-08/09, Singapore 159456</li>
+				</ul>
+			</address>
+		</footer>
+		<button>Tell us your name!</button>
 	</body>
 </html>
