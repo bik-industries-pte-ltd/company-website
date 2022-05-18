@@ -1,23 +1,91 @@
 <!--python -m http.server Use this command to initialise server-->
 
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 	<head>
-		<title>BIK Industries</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>BIK Industries</title>
+		<meta name="description" content="BIK Industries sells and maintains high-speed inkjet printers. We deal with high-profile clients, including manufacturing and engineering companies, for our printing services.">
+		<link rel="icon" href="images/bik-industries.png" type="image/x-icon">
+
+		<!--og meta fields are used for Open Graph Data to provide an image and description when users embed the website link-->
+		<meta property="og:image" content="images/bik-industries.png">
+		<meta property="og:description" content="BIK Industries sells and maintains high-speed inkjet printers. We deal with high-profile clients, including manufacturing and engineering companies, for our printing services.">
+		<meta property="og:title" content="BIK Industries">
+		
+
 		<link href="styles/style.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<script src="scripts/main.js" defer></script>
 	</head>
 	<body>
-		<h1>BIK Industries</h1>
-		<img src="images/bik-industries.png" alt="The BIK Industries company logo.">
-		<p class="company-info">BIK Industries sells and maintains high-speed <a href="https://en.wikipedia.org/wiki/Inkjet_printing">inkjet printers</a>. We deal with high-profile clients, including manufacturing and engineering companies, for our printing services.</p>
-		<p class="company-info">You can reach us at:</p>
-		<ul class="company-info">
-			<li>ian@bikindustries.com</li>
-			<li>1002 JALAN BUKIT MERAH, #04-08/09, Singapore 159456</li>
-		</ul>
-		<button>Change user</button>
-		<script src="scripts/main.js"></script>
+		<header class="fixed-top">
+			<nav class="navbar">
+				<a class="site-logo-link" href="https://www.google.com">
+					<!--TODO: UPDATE SITE LOGO LINK AFTER TESTING-->
+					<div class="site-logo">
+						<img src="images/bik-industries.png" alt="BIK Industries Site Logo">
+					</div>
+				</a>
+
+				<div class="menu-container">
+					<ul id="menu-list">
+						<li id="menu-item-aboutus">
+							<a href="https://facebook.com">About Us</a>
+						</li>
+						<li id="menu-item-products">
+							<a href="products/products.html">Products</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<div id="content" class="site-content">
+		     	<main id="main" class="site-main" role="main">
+		     		<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<h1>BIK Industries</h1>
+					<p class="company-info">BIK Industries sells and maintains high-speed <a title="Wikipedia - Inkjet Printers" href="https://en.wikipedia.org/wiki/Inkjet_printing">inkjet printers</a>. We deal with high-profile clients, including manufacturing and engineering companies, for our printing services.</p>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lorem nisl, convallis at pellentesque sed, viverra at massa. Etiam consectetur eu risus et tincidunt. Duis a turpis nec ligula mollis cursus ac vitae libero. Nam dignissim neque nec dui interdum, sed dictum risus placerat. Ut sit amet sem arcu. Ut id bibendum augue. Integer faucibus risus sem, non interdum lorem ornare ac. Ut porttitor fermentum felis, in rhoncus augue luctus et.
+
+
+
+Ut vehicula ullamcorper ex, id fermentum enim fringilla eget. Nulla nec tincidunt augue. Nullam at neque et libero convallis porttitor quis vel tortor. Integer laoreet rhoncus libero vel eleifend. Aliquam eleifend neque non nulla viverra, eget pulvinar massa luctus. Suspendisse potenti. In non ullamcorper massa.
+
+Fusce id ipsum ut magna sollicitudin convallis. Suspendisse fermentum urna ut vestibulum finibus. Quisque luctus fermentum luctus. Etiam tempus quam in enim mollis posuere. Mauris at quam felis. Phasellus lobortis ante eu risus aliquet elementum. Aenean placerat cursus posuere.
+
+Cras nec sapien lectus. Vivamus id eleifend nunc, eget bibendum nisl. In ac volutpat leo, eu hendrerit justo. Pellentesque ac elit venenatis, tempus augue a, scelerisque nulla. Morbi semper tellus odio. Ut purus augue, gravida in interdum id, elementum nec metus. Pellentesque sollicitudin nibh eget pulvinar congue. Nullam facilisis non velit a lobortis.
+
+Aliquam feugiat arcu at dolor ultricies aliquam. Praesent iaculis velit felis, et dignissim dolor viverra non. Aliquam vitae ligula id diam lacinia suscipit. Sed tincidunt lectus porttitor eros imperdiet pulvinar. Mauris non molestie metus, vel semper ante. In hac habitasse platea dictumst. Phasellus placerat ac dolor et ultricies. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam vel dignissim diam, imperdiet tempus dolor. Fusce rhoncus lorem sodales suscipit iaculis. Vestibulum eu augue vitae magna rutrum mattis vestibulum et mi. Nulla quis euismod mi.
+
+Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc quis auctor ipsum. Cras vel ultricies sapien, ac vestibulum dui. Sed at dui lorem. Maecenas pellentesque arcu turpis, nec tincidunt felis rhoncus in. Nam faucibus lacus libero, sit amet feugiat dolor viverra in. Cras dui nulla, vulputate sit amet ante semper, mollis facilisis augue. Mauris efficitur tellus eu nulla vehicula rhoncus. Quisque nec consequat massa. Duis ut bibendum leo. Duis a dui et massa lobortis scelerisque. Aenean mi neque, pharetra eget porttitor in, commodo nec sapien. Quisque euismod porttitor leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Vivamus pretium imperdiet posuere. Curabitur quis volutpat nulla, vel finibus lorem. Sed lacinia convallis nisi, nec egestas dolor. Cras eu sollicitudin nibh, ac accumsan velit. Duis velit ligula, faucibus et quam in, consectetur aliquet est. Quisque vitae felis vitae erat gravida malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus iaculis turpis nisi, sed volutpat tortor hendrerit id. Aliquam ac lorem mi. Quisque auctor odio felis, et tristique enim sollicitudin nec. Suspendisse fringilla luctus nisi, ut vulputate magna pretium id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus consectetur magna enim, vitae porta purus posuere a.
+
+Mauris tortor nibh, aliquet ac leo ut, aliquam mattis ipsum. Nulla finibus feugiat ultricies. Sed pretium sapien eget dui viverra vestibulum. Pellentesque hendrerit non erat sed hendrerit. Maecenas ultricies ipsum nec dictum pulvinar. Proin non faucibus purus. Nullam gravida consequat sapien, a vehicula leo luctus sed. Ut maximus lorem vitae mauris fringilla, sed suscipit ex pretium. Etiam vel luctus lacus. Vivamus dapibus at mi et volutpat. Curabitur blandit lorem elit, eget viverra turpis rutrum et. Nam euismod sem ut ultrices placerat. Nunc ut eleifend libero. Donec est sapien, tempus id est eget, sagittis viverra sapien. Phasellus mollis ex ante, non pulvinar odio molestie ut.
+</p>
+				</main>
+		</div>
+		<div>
+			<footer>
+				<h3 class="company-info">Contact Us</h3>
+				<address>
+					<ul class="company-info">
+						<li><a href="mailto:ian@bikindustries.com" title="Compose an email">ian@bikindustries.com</a></li>
+						<li>1002 JALAN BUKIT MERAH, #04-08/09, Singapore 159456</li>
+					</ul>
+				</address>
+			</footer>
+			<button>Tell us your name!</button>
+		</div>
 	</body>
 </html>
