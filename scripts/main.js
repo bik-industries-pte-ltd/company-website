@@ -1,3 +1,4 @@
+/*
 let myImage = document.querySelector('img');
 myImage.onclick = function() {
 	let mySrc = myImage.getAttribute('src');
@@ -19,7 +20,7 @@ myButton.onclick = function() {
 		myHeading.textContent = 'BIK Industries';
 	}
 }
-/*function setUserName() {
+function setUserName() {
 	let myName = prompt('Please enter your name.');
 	if(!myName) {
 		setUserName();
@@ -38,4 +39,5 @@ if(!localStorage.getItem('name')) {
 
 myButton.onclick = function() {
 	setUserName();
-}*/
+}
+*/
