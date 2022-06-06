@@ -18,15 +18,8 @@ html {
 	box-sizing: border-box;
 }
 
-h2 {
-	color:  var(--primary-red);
-	font-size: xx-large;
-	text-align: center;
-}
-
-body {
-	margin: 0;
-	padding: 0;
+div {
+	/* border: 1px solid blue; */
 }
 
 header {
@@ -41,15 +34,6 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-main {
-	display: block;
-	padding-top: 10vh; /* prevent overlap with header */
-}
-
-div {
-	/* border: 1px solid blue; */
 }
 
 .header-left-space, .header-right-space {
@@ -89,6 +73,120 @@ ul {
 	text-decoration: underline solid var(--secondary-red);
 }
 
+main {
+	display: block;
+	padding-top: 10vh; /* prevent overlap with header */
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.main-container {
+	margin: 0 auto;
+	width: 50vw; /* 2/3 of full page */
+}
+
+h1 {
+	color:  var(--primary-red);
+	font-size: 2.5em;
+	text-align: left;
+	font-weight: bolder;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	color:  var(--secondary-red);
+	font-size: xx-large;
+	text-align: left;
+}
+
+h3 {
+	color:  var(--primary-red);
+	font-size: x-large;
+	text-align: left;
+	font-weight: normal;
+}
+
+main .landing-page-main-content {
+	width: 100%;
+	display: flex;
+}
+
+main .main-content-container {
+	width: 50%;
+	padding-left: 4vw;
+	margin: auto 0;
+}
+
+main .main-content-container li {
+	margin-top: 4vh;
+}
+
+main .image-container {
+	padding: 0;
+}
+
+main .main-content-container img {
+	width: 100%;
+}
+
+main .emphasis {
+	color: var(--secondary-red);
+}
+
+main .contact-information-ul {
+	margin: 0;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: center;
+	font-size: large;
+}
+
+main .contact-information-ul li {
+	width: 50%;
+	margin: 1vh 0;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+main .product-ul {
+	margin: 0;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: center;
+	font-size: large;
+}
+
+main .product-ul li {
+	width: 50%;
+	padding: 0 0.5vw;
+	margin: 1vh 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main .product-ul li img {
+	width: 100%;
+	border-radius: 15px;
+}
+
+.contact-information-icon {
+	vertical-align: middle;
+	max-height: 5em;
+	width: auto;
+	margin-right: 1vw;
+}
+
 footer {
 	margin: 0;
 	padding: 0 8vw;
@@ -118,6 +216,7 @@ footer .footer-section-title {
 	vertical-align: middle;
 	max-height: 1.5em;
 	width: auto;
+	margin-right: 1vw;
 }
 
 footer li:not(:last-child) {
