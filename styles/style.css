@@ -16,11 +16,11 @@ html {
 }
 
 * {
-	/* box-sizing: border-box; */
+	box-sizing: border-box;
 }
 
 div {
-	border: 1px solid blue;
+	/* border: 1px solid blue; */
 }
 
 body, h1, h2, h3, ul {
