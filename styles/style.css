@@ -9,7 +9,7 @@
 
 html {
 	background-color: var(--main-bg-color);
-	font-size: medium;
+	font-size: 1em;
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
 	padding: 0;
@@ -143,6 +143,7 @@ main {
 main .landing-page-main-content {
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 }
 
 main .landing-page-banner-image {
@@ -151,18 +152,23 @@ main .landing-page-banner-image {
 	object-fit: cover;
 }
 
+main .whatwedo-header {
+	text-align: center;
+}
+
 main .whatwedo-content-container {
-	width: 50%;
+	width: 100%;
 	padding-left: 4vw;
 	margin: auto 0;
+	text-align: center;
 }
 
 main .whatwedo-content-container li {
-	margin-top: 4vh;
+	margin-bottom: 2vh;
 }
 
-main .image-container {
-	padding: 0;
+main .whatwedo-image-container {
+	padding: 0 5vw;
 }
 
 main .whatwedo-content-container img {
@@ -301,8 +307,24 @@ footer .copyright-info {
 		width: 60vw;
 	}
 
+	/* || Landing Page Styling */
+
 	main .landing-page-banner-image {
 		max-height: 60vh;
+	}
+
+	main .whatwedo-content-container {
+		width: 50%;
+		text-align: left;
+	}
+
+	main .whatwedo-image-container {
+		padding: 0;
+	}
+
+	main .whatwedo-header {
+		text-align: left;
+		padding-bottom: 2vh;
 	}
 
 	/* || Product Page Styling */
