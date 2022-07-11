@@ -236,6 +236,12 @@ main {
 	margin-bottom: 2vh;
 }
 
+.aboutUs-banner-image {
+	width: 100%;
+	max-height: 15vh;
+	object-fit: cover;
+}
+
 /* || ContactUs Page Styling */
 .contactUs-ul {
 	margin: 0;
@@ -395,6 +401,13 @@ footer li:not(:last-child) { /* For list in footer "contact us" section */
 	.whatwedo-header {
 		text-align: left;
 		padding-bottom: 2vh;
+	}
+
+	/* || AboutUs Styling */
+	.aboutUs-banner-image {
+		width: 100%;
+		max-height: 25vh;
+		object-fit: cover;
 	}
 
 	/* || Product Page Styling */
