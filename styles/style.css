@@ -209,8 +209,7 @@ main {
 
 .whatwedo-content-container {
 	width: 100%;
-	padding-left: 4vw;
-	margin: auto 0;
+	padding: 0 5vw;
 	text-align: center;
 }
 
@@ -218,13 +217,50 @@ main {
 	margin-bottom: 2vh;
 }
 
-.whatwedo-image-container {
-	padding: 0 5vw;
-}
-
 .whatwedo-content-container img {
 	width: 100%;
 	border-radius: 5px;
+	height: 30vh;
+	object-fit: cover;
+}
+
+.slideshow-container {
+	position: relative;
+}
+
+.slide {
+	display: none;
+	position: relative;
+}
+
+.slide-caption-header {
+	font-size: 1.5em;
+}
+
+.slide-caption {
+	color: var(--main-bg-color);
+	position: absolute;
+	top: 0;
+	right: 2vw;
+	text-align: right;
+	max-width: 60%;
+}
+
+.slide-controls {
+	position: absolute;
+	bottom: 1vh;
+	left: 2vw;
+	font-size: 2.5em;
+	color: var(--main-bg-color);
+}
+
+.slide-selector {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.prev, .next {
+	cursor: pointer;
 }
 
 .emphasis {
@@ -388,6 +424,12 @@ footer li:not(:last-child) { /* For list in footer "contact us" section */
 	.whatwedo-content-container {
 		width: 50%;
 		text-align: left;
+		margin: auto 0;
+		padding: 0;
+	}
+
+	.whatwedo-content-container:last-child {
+		padding-left: 2vw;
 	}
 
 	.whatwedo-image-container {
@@ -396,6 +438,8 @@ footer li:not(:last-child) { /* For list in footer "contact us" section */
 
 	.whatwedo-content-container img {
 		border-radius: 0;
+		height: 30vh;
+		object-fit: cover;
 	}
 
 	.whatwedo-header {

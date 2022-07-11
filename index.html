@@ -80,15 +80,38 @@
 			<div class="whatwedo-content-container hidden-on-desktop">
 				<h2 class="whatwedo-header">What We Do</h2>
 			</div>
-			<div class="whatwedo-content-container whatwedo-image-container">
-				<img src="images/tinted-4-pen-drum.png" alt="Custom built inkjet system">
+			<div class="whatwedo-content-container">
+				<div class="slideshow-container">
+					<div class="slide">
+						<img src="images/tinted-4-pen-drum.png" alt="Custom built inkjet system">
+						<div class="slide-caption">
+							<span class="slide-caption-header">Industrial Printing</span><br><br>We ensure reliable printing at an industrial scale
+						</div>
+					</div>
+					<div class="slide">
+						<img src="images/tinted-4-pen.png" alt="Custom built inkjet system">
+						<div class="slide-caption">
+							<span class="slide-caption-header">Complex Print Projects</span><br><br>Regardless of the product size, orientation, or print surface, we can find a soluution to suit your needs
+						</div>
+					</div>
+					<div class="slide">
+						<img src="images/tinted-6-pen.png" alt="Custom built inkjet system">
+						<div class="slide-caption">
+							<span class="slide-caption-header">Customised System Integration</span><br><br>Our solutions are custom-built to serve your needs in terms of your desired use case, speed, and scale
+						</div>
+					</div>
+					<div class="slide-controls">
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+				</div>
 			</div>
 			<div class="whatwedo-content-container">
 				<h2 class="hidden-on-mobile whatwedo-header">What We Do</h2>
 				<ul>
-					<li>Industrial Printing</li>
-					<li>Complex Print Projects</li>
-					<li>Customised System Integration</li>
+					<li class="slide-selector" onclick="currentSlide(1)">Industrial Printing</li>
+					<li class="slide-selector" onclick="currentSlide(2)">Complex Print Projects</li>
+					<li class="slide-selector" onclick="currentSlide(3)">Customised System Integration</li>
 				</ul>
 			</div>
 		</div>
