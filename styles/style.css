@@ -140,6 +140,29 @@ main {
 	margin: 0 auto;
 	width: 80vw;
 }
+
+.call-to-action-container {
+	display: flex;
+}
+
+.call-to-action {
+	margin: 0 auto;
+	background-color: var(--main-bg-color);
+	border: 2px solid var(--primary-red);
+	border-radius: 10px;
+	text-align: center;
+	padding: 1vh 2vw 2vh 2vw;
+}
+
+.call-to-action-button {
+	color: var(--main-bg-color);
+	background-color: var(--secondary-red);
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 1vh 2vw;
+	margin: 0 1vw;
+}
+
 /* || Landing Page Styling */
 .landing-page-banner-container {
 	position: relative;
@@ -201,6 +224,7 @@ main {
 
 .whatwedo-content-container img {
 	width: 100%;
+	border-radius: 5px;
 }
 
 .emphasis {
@@ -302,6 +326,11 @@ footer {
 	margin-right: 1vw;
 }
 
+footer li {
+	display: flex;
+	align-items: center;
+}
+
 footer li:not(:last-child) { /* For list in footer "contact us" section */
    margin-bottom: 2vh;
 }
@@ -340,6 +369,10 @@ footer li:not(:last-child) { /* For list in footer "contact us" section */
 		width: 60vw;
 	}
 
+	.call-to-action {
+		padding: 2vh 2vw;
+	}
+
 	/* || Landing Page Styling */
 
 	.landing-page-banner-image {
@@ -353,6 +386,10 @@ footer li:not(:last-child) { /* For list in footer "contact us" section */
 
 	.whatwedo-image-container {
 		padding: 0;
+	}
+
+	.whatwedo-content-container img {
+		border-radius: 0;
 	}
 
 	.whatwedo-header {
