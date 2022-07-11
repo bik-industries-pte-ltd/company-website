@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<title>biK Industries</title>
+	<title>biK Industries Pte Ltd</title>
 	<meta name="description" content="biK Industries sells and maintains high-speed inkjet printers. We deal with high-profile clients, including manufacturing and engineering companies, for our customised printing solutions.">
 	<link rel="icon" href="images/bik-industries-logo.jpg" type="image/x-icon">
 
@@ -80,15 +80,38 @@
 			<div class="whatwedo-content-container hidden-on-desktop">
 				<h2 class="whatwedo-header">What We Do</h2>
 			</div>
-			<div class="whatwedo-content-container whatwedo-image-container">
-				<img src="images/tinted-4-pen-drum.png" alt="Custom built inkjet system">
+			<div class="whatwedo-content-container">
+				<div class="slideshow-container">
+					<div class="slide">
+						<img src="images/tinted-4-pen-drum.png" alt="Custom built inkjet system">
+						<div class="slide-caption">
+							<span class="slide-caption-header">Industrial Printing</span><br><br>We ensure reliable printing at an industrial scale
+						</div>
+					</div>
+					<div class="slide">
+						<img src="images/tinted-4-pen.png" alt="Custom built inkjet system">
+						<div class="slide-caption">
+							<span class="slide-caption-header">Complex Print Projects</span><br><br>Regardless of the product size, orientation, or print surface, we can find a soluution to suit your needs
+						</div>
+					</div>
+					<div class="slide">
+						<img src="images/tinted-6-pen.png" alt="Custom built inkjet system">
+						<div class="slide-caption">
+							<span class="slide-caption-header">Customised System Integration</span><br><br>Our solutions are custom-built to serve your needs in terms of your desired use case, speed, and scale
+						</div>
+					</div>
+					<div class="slide-controls">
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+				</div>
 			</div>
 			<div class="whatwedo-content-container">
 				<h2 class="hidden-on-mobile whatwedo-header">What We Do</h2>
 				<ul>
-					<li>• Industrial Printing</li>
-					<li>• Complex Print Projects</li>
-					<li>• Customised System Integration</li>
+					<li class="slide-selector" onclick="currentSlide(1)">Industrial Printing</li>
+					<li class="slide-selector" onclick="currentSlide(2)">Complex Print Projects</li>
+					<li class="slide-selector" onclick="currentSlide(3)">Customised System Integration</li>
 				</ul>
 			</div>
 		</div>
@@ -116,7 +139,12 @@
 			<div class="footer-section-title">Contact Us</div>
 			<div>
 				<ul>
-					<li><img class="footer-icon" src="images/icon-phone.png" alt="Phone icon">Call +65 6776 8717<br>WhatsApp +65 9060 7070</li>
+					<li><img class="footer-icon" src="images/icon-phone.png" alt="Phone icon">
+						<div>
+							<div>Call <a href="tel:+6567768717">+65 6776 8717</a></div>
+							<div>WhatsApp <a href="https://wa.me/6590607070">+65 9060 7070</a></div>
+						</div>
+					</li>
 					<li><img class="footer-icon" src="images/icon-email.png" alt="Email icon"><a href="mailto:ian@bikindustries.com" title="Compose an email">ian@bikindustries.com</a></li>
 					<li><img class="footer-icon" src="images/icon-location.png" alt="Location pin icon">1002 Jalan Bukit Merah, #04-08/09, Singapore 159456</li>
 				</ul>
