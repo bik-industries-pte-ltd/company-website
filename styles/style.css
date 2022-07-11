@@ -69,6 +69,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 1;
 }
 
 .header-container {
@@ -92,6 +93,7 @@ header {
 	padding: 0 15vw;
 }
 
+/* || Menu Styling */
 .hamburger-menu-icon {
 	width: 10vw;
 	height: auto;
@@ -114,7 +116,6 @@ header {
 	padding: 0 2vw;
 }
 
-/* || Menu Styling */
 .menu a {
 	color: var(--primary-text-color);
 	margin-left: 2vw;
@@ -135,52 +136,108 @@ main {
 	padding-top: 10vh; /* prevent overlap with header */
 }
 
-.main-container {
+.main-container { /* to set the content width all pages except landing page */
 	margin: 0 auto;
 	width: 80vw;
 }
-/* || Landing Page Styling */
-main .landing-page-main-content {
-	width: 100%;
+
+.call-to-action-container {
 	display: flex;
-	flex-wrap: wrap;
 }
 
-main .landing-page-banner-image {
+.call-to-action {
+	margin: 0 auto;
+	background-color: var(--main-bg-color);
+	border: 2px solid var(--primary-red);
+	border-radius: 10px;
+	text-align: center;
+	padding: 1vh 2vw 2vh 2vw;
+}
+
+.call-to-action-button {
+	color: var(--main-bg-color);
+	background-color: var(--secondary-red);
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 1vh 2vw;
+	margin: 0 1vw;
+}
+
+/* || Landing Page Styling */
+.landing-page-banner-container {
+	position: relative;
+}
+
+.landing-page-banner-image {
 	width: 100%;
 	max-height: 40vh;
 	object-fit: cover;
 }
 
-main .whatwedo-header {
+.landing-page-banner-caption {
+	position: absolute;
+	background-color: var(--secondary-red);
+	text-align: center;
+	font-size: 1em;
+	color: var(--main-bg-color);
+	padding: 1vw;
+}
+
+.caption-featured-product {
+	top: 0;
+	right: 0;
+}
+
+.caption-product-name {
+	background-color: var(--primary-red);
+	bottom: 3vh;
+
+	/* Centers the absolute-positioned caption div */
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.landing-page-main-content {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.whatwedo-header {
 	text-align: center;
 }
 
-main .whatwedo-content-container {
+.whatwedo-content-container {
 	width: 100%;
 	padding-left: 4vw;
 	margin: auto 0;
 	text-align: center;
 }
 
-main .whatwedo-content-container li {
+.whatwedo-content-container li {
 	margin-bottom: 2vh;
 }
 
-main .whatwedo-image-container {
+.whatwedo-image-container {
 	padding: 0 5vw;
 }
 
-main .whatwedo-content-container img {
+.whatwedo-content-container img {
 	width: 100%;
+	border-radius: 5px;
 }
 
-main .emphasis {
+.emphasis {
 	color: var(--secondary-red);
 }
 
+/* || AboutUs Page Styling */
+.aboutUs-ul li {
+	margin-bottom: 2vh;
+}
+
 /* || ContactUs Page Styling */
-main .contactUs-ul {
+.contactUs-ul {
 	margin: 0;
 	width: 100%;
 	display: flex;
@@ -190,7 +247,7 @@ main .contactUs-ul {
 	font-size: large;
 }
 
-main .contactUs-ul li {
+.contactUs-ul li {
 	width: 100%;
 	margin: 1vh 0;
 	display: flex;
@@ -210,7 +267,7 @@ main .contactUs-ul li {
 }
 
 /* || Product Page Styling */
-main .product-ul {
+.product-ul {
 	margin: 0;
 	width: 100%;
 	display: flex;
@@ -220,7 +277,7 @@ main .product-ul {
 	font-size: large;
 }
 
-main .product-ul li {
+.product-ul li {
 	width: 100%;
 	padding: 0 0.5vw;
 	margin: 1vh 0;
@@ -230,7 +287,7 @@ main .product-ul li {
 	align-items: center;
 }
 
-main .product-ul li img {
+.product-ul li img {
 	width: 100%;
 	border-radius: 15px;
 }
@@ -246,13 +303,13 @@ footer {
 	align-items: top;
 }
 
-footer .footer-section {
+.footer-section {
 	width: 100%;
 	margin-bottom: 5vh;
 	padding-right: 1vh;
 }
 
-footer .footer-section-title {
+.footer-section-title {
 	font-weight: bold;
 	margin-bottom: 1.5vh;
 }
@@ -269,11 +326,16 @@ footer .footer-section-title {
 	margin-right: 1vw;
 }
 
+footer li {
+	display: flex;
+	align-items: center;
+}
+
 footer li:not(:last-child) { /* For list in footer "contact us" section */
    margin-bottom: 2vh;
 }
 
-footer .copyright-info {
+.copyright-info {
 	color: var(--secondary-text-color);
 }
 
@@ -307,38 +369,47 @@ footer .copyright-info {
 		width: 60vw;
 	}
 
+	.call-to-action {
+		padding: 2vh 2vw;
+	}
+
 	/* || Landing Page Styling */
 
-	main .landing-page-banner-image {
+	.landing-page-banner-image {
 		max-height: 60vh;
 	}
 
-	main .whatwedo-content-container {
+	.whatwedo-content-container {
 		width: 50%;
 		text-align: left;
 	}
 
-	main .whatwedo-image-container {
+	.whatwedo-image-container {
 		padding: 0;
 	}
 
-	main .whatwedo-header {
+	.whatwedo-content-container img {
+		border-radius: 0;
+	}
+
+	.whatwedo-header {
 		text-align: left;
 		padding-bottom: 2vh;
 	}
 
 	/* || Product Page Styling */
-	main .product-ul li {
+	.product-ul li {
 		width: 50%;
+		padding: 0 2vw;
 	}
 
 	/* || ContactUs Styling */
-	main .contactUs-ul li {
+	.contactUs-ul li {
 		width: 50%;
 	}
 
 	/* || Footer Styling */
-	footer .footer-section {
+	.footer-section {
 		width: 33%;
 		margin-bottom: 0vh;
 	}
