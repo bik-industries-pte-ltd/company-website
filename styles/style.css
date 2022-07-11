@@ -438,7 +438,7 @@ footer li:not(:last-child) { /* For list in footer "contact us" section */
 
 	.whatwedo-content-container img {
 		border-radius: 0;
-		height: 30vh;
+		height: 35vh;
 		object-fit: cover;
 	}
 
