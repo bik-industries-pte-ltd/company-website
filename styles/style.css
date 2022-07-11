@@ -363,6 +363,7 @@ footer li:not(:last-child) { /* For list in footer "contact us" section */
 	/* || Product Page Styling */
 	.product-ul li {
 		width: 50%;
+		padding: 0 2vw;
 	}
 
 	/* || ContactUs Styling */
