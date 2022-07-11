@@ -179,6 +179,11 @@ main .emphasis {
 	color: var(--secondary-red);
 }
 
+/* || AboutUs Page Styling */
+main .aboutUs-ul li {
+	margin-bottom: 2vh;
+}
+
 /* || ContactUs Page Styling */
 main .contactUs-ul {
 	margin: 0;
