@@ -60,54 +60,67 @@
 	</header>
 
 	<main role="main">
-		<div class="landing-page-banner-container">
-			<div class="landing-page-banner-caption caption-featured-product">
-				<span>Featured Products</span>
-			</div>
-			<div class="landing-page-banner-caption caption-product-name">
-				<span>3-Sided Printing</span>
-			</div>
-			<img class="landing-page-banner-image" src="images/landingpage-banner-3-sided-printing.webp" alt="3-sided inkjet printing system">
-		</div>
-
-		<div class="landing-page-main-content">
-			<div class="whatwedo-content-container hidden-on-desktop">
-				<h2 class="whatwedo-header">What We Do</h2>
-			</div>
-			<div class="whatwedo-content-container">
-				<div class="slideshow-container">
-					<div class="slide">
-						<img src="images/tinted-4-pen-drum.png" alt="Custom built inkjet system">
-						<div class="slide-caption">
-							<span class="slide-caption-header">Industrial Marking and Coding</span><br><br>We ensure reliable marking and coding at an industrial scale.
-						</div>
-					</div>
-					<div class="slide">
-						<img src="images/tinted-4-pen.png" alt="Custom built inkjet system">
-						<div class="slide-caption">
-							<span class="slide-caption-header">Complex Print Projects</span><br><br>Regardless of the product size, orientation, or print surface, we can find a solution to suit your needs.
-						</div>
-					</div>
-					<div class="slide">
-						<img src="images/tinted-6-pen.png" alt="Custom built inkjet system">
-						<div class="slide-caption">
-							<span class="slide-caption-header">Customised System Integration</span><br><br>Our solutions are custom-built to serve your needs in terms of your desired use case, speed, and scale.
-						</div>
-					</div>
-					<div class="slide-controls">
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			<div class="slideshow-container">
+				<div class="slide">
+					<img class="landing-page-slideshow-image" src="images/landingpage-banner-3-sided-printing.webp" alt="3-sided inkjet printing system">
+					<div class="landing-page-slideshow-caption caption-product-name">
+						<span>3-Sided Printing</span>
 					</div>
 				</div>
+
+				<div class="slide">
+					<img class="landing-page-slideshow-image" src="images/landingpage-banner-mask-printing.webp" alt="N95 mask inkjet printing system">
+					<div class="landing-page-slideshow-caption caption-product-name">
+						<span>N95 Mask Printing</span>
+					</div>
+				</div>
+
+				<div class="slide">
+					<img class="landing-page-slideshow-image" src="images/landingpage-banner-drum-printing.webp" alt="Drum inkjet printing system">
+					<div class="landing-page-slideshow-caption caption-product-name">
+						<span>Drum Printing</span>
+					</div>
+				</div>
+
+				<div class="landing-page-slideshow-caption caption-featured-product">
+					<span>Featured Products</span>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<div class="slide-controls">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+				</div>
 			</div>
+
+			<h2 class="whatwedo-header">What We Do</h2>
 			<div class="whatwedo-content-container">
-				<h2 class="hidden-on-mobile whatwedo-header">What We Do</h2>
-				<ul>
-					<li class="slide-selector" onclick="currentSlide(1)">Industrial Printing</li>
-					<li class="slide-selector" onclick="currentSlide(2)">Complex Print Projects</li>
-					<li class="slide-selector" onclick="currentSlide(3)">Customised System Integration</li>
-				</ul>
-			</div>
+				<div>
+					<img src="images/landingpage-whatwedo-industrial-marking-and-coding.webp" alt="Custom built inkjet system">
+					<h3>Industrial Marking and Coding</h3>
+					<p>We ensure reliable marking and coding at an industrial scale.</p>
+					<hr class="hidden-on-desktop">
+					<br>
+				</div>
+
+				<div>
+					<img src="images/landingpage-whatwedo-complex-print-projects.webp" alt="Custom built inkjet system">
+					<h3>Complex Print Projects</h3>
+					<p>Regardless of the product size, orientation, or print surface, we can find a solution to suit your needs.</p>
+					<hr class="hidden-on-desktop">
+					<br>
+				</div>
+
+				<div>
+					<img src="images/landingpage-whatwedo-customised-system-integration.webp" alt="Custom built inkjet system">
+					<h3>Customised System Integration</h3>
+					<p>Our solutions are custom-built to serve your needs in terms of your desired use case, speed, and scale.</p>
+					<hr class="hidden-on-desktop">
+					<br>
+				</div>
+
 		</div>
 		<div class="call-to-action-container">
 			<div class="call-to-action">
