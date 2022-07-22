@@ -62,7 +62,7 @@ header {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	min-height: 10vh;
+	height: 10vh;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -81,35 +81,30 @@ header {
 }
 
 .header-logo {
-	width: 15vw;
-	height: auto;
-}
-
-.mobile-header-left-space {
-	padding: 0 20vw;
-}
-
-.mobile-header-center-space {
-	padding: 0 15vw;
+	height: 8vh;
+	width: auto;
 }
 
 /* || Menu Styling */
 .hamburger-menu-icon {
-	width: 10vw;
-	height: auto;
+	position: absolute;
+	top: 2vh;
+	right: 1vw;
+	height: 6vh;
+	width: auto;
 }
 
 #mobile-menu {
 	position: fixed;
 	top: 10vh; /* since header is 10vh */
 	left: 0;
-	width: 100vh;
+	width: 100vw;
 	display: none;
 	background-color: rgba(255, 255, 255, 0.98); /* white, slightly transparent */
 }
 
 #mobile-menu li {
-	font-size: 2.25em;
+	font-size: 2.15em;
 }
 
 .desktop-header-center-space {
@@ -136,7 +131,7 @@ main {
 	padding-top: 10vh; /* prevent overlap with header */
 }
 
-.main-container { /* to set the content width all pages except landing page */
+.main-container { /* to set the content width on all pages except landing page */
 	margin: 0 auto;
 	width: 80vw;
 }
@@ -146,12 +141,12 @@ main {
 }
 
 .call-to-action {
-	margin: 0 auto;
 	background-color: var(--main-bg-color);
 	border: 2px solid var(--primary-red);
 	border-radius: 10px;
 	text-align: center;
 	padding: 1vh 2vw 2vh 2vw;
+	margin: 0 auto;
 }
 
 .call-to-action-button {
@@ -161,6 +156,10 @@ main {
 	text-decoration: none;
 	padding: 1vh 2vw;
 	margin: 0 1vw;
+}
+
+.emphasis {
+	color: var(--secondary-red);
 }
 
 /* || Landing Page Styling */
@@ -175,11 +174,11 @@ main {
 }
 
 .landing-page-banner-caption {
-	position: absolute;
 	background-color: var(--secondary-red);
+	color: var(--main-bg-color);
+	position: absolute;
 	text-align: center;
 	font-size: 1em;
-	color: var(--main-bg-color);
 	padding: 1vw;
 }
 
@@ -219,8 +218,8 @@ main {
 
 .whatwedo-content-container img {
 	width: 100%;
-	border-radius: 5px;
 	height: 30vh;
+	border-radius: 5px;
 	object-fit: cover;
 }
 
@@ -243,15 +242,15 @@ main {
 	top: 0;
 	right: 2vw;
 	text-align: right;
-	max-width: 60%;
+	max-width: 70%;
 }
 
 .slide-controls {
+	color: var(--main-bg-color);
 	position: absolute;
 	bottom: 1vh;
 	left: 2vw;
 	font-size: 2.5em;
-	color: var(--main-bg-color);
 }
 
 .slide-selector {
@@ -259,23 +258,20 @@ main {
 	text-decoration: underline;
 }
 
-.prev, .next {
+.prev,
+.next {
 	cursor: pointer;
 }
 
-.emphasis {
-	color: var(--secondary-red);
-}
-
 /* || AboutUs Page Styling */
-.aboutUs-ul li {
-	margin-bottom: 2vh;
-}
-
 .aboutUs-banner-image {
 	width: 100%;
 	max-height: 15vh;
 	object-fit: cover;
+}
+
+.aboutUs-ul li {
+	margin-bottom: 2vh;
 }
 
 /* || ContactUs Page Styling */
@@ -299,8 +295,7 @@ main {
 
 .contactUs-icon {
 	vertical-align: middle;
-	max-height: 5em;
-	width: auto;
+	height: 10vh;
 	margin-right: 1vw;
 }
 
@@ -463,6 +458,10 @@ footer li:not(:last-child) { /* For list in footer "contact us" section */
 	/* || ContactUs Styling */
 	.contactUs-ul li {
 		width: 50%;
+	}
+
+	.contactUs-icon {
+		height: 15vh;
 	}
 
 	/* || Footer Styling */
