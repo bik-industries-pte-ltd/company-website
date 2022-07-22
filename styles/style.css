@@ -205,7 +205,8 @@ main {
 	font-size: 1.5em;
 }
 
-.prev, .next {
+.prev,
+.next {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
@@ -227,7 +228,8 @@ main {
 	border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
 	background-color: rgba(0,0,0,0.8);
 }
 
