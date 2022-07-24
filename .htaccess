@@ -1,8 +1,2 @@
-# Redirect www requests to non-www site
-RewriteEngine On
-RewriteBase /
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
-
 # Redirect 404 requests to custom 404 page
 ErrorDocument 404 /404.html
